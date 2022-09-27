@@ -24,9 +24,15 @@
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
     color: #F9FAF8;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo span {
+    font-weight: lighter;
+    font-size: 1em;
+    color: #CCC;
 }
 
 .hero-container {
@@ -119,6 +125,8 @@ ul {
     text-align: center;
     flex-wrap: wrap;
     gap: 15px;
+
+   
 }
 
 .gallery-items-layout {
@@ -126,16 +134,13 @@ ul {
     flex-direction: column;
     align-items: center;
 
-    padding: 24px;
     text-align: center;
     
+    padding: 20px 24px;
     width: 20%;
-
-    background: rgba( 5, 30, 68, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 5px;
+    height: auto;
+    background-color: #1F2937;
+    border-radius: 10px;
 
 
 
@@ -143,34 +148,43 @@ ul {
 
 .gallery-items-layout img {
     max-width: 300px;
-    height: 200px;
+    height: 300px;
+    object-fit:cover;
+    margin:15px auto 24px;
+
+    background: rgba( 56, 130, 246, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .gallery-items-layout h4 {
+    text-justify: auto;
     text-align: center;
     align-content: center;
     font-size: 1.2rem;
-    border-bottom: 2px solid #AAA;
+    border-bottom: 2px solid #999;
     width: 65%;
     padding-bottom: 20px;
     margin: 12px auto 8px;
-    color: #1F2937;
+    color: #E5E7EB;
     font-weight: bolder;
 }
 
 .gallery-items-layout h4 span {
-    text-transform:uppercase;
     font-weight: 100;
     font-size: 1rem;
-    color: #777;
+    color: #AAA;
 }
 .gallery-items-layout p {
     font-size: 1rem;
     font-weight: 100;
-    color: #222;
+    color: #AAA;
     width: 90%;
     margin-top: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 36px;
 }
 
 .quote-container {
